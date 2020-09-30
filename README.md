@@ -16,7 +16,7 @@ The simple python script will help you in the choose the correct simulation type
     
 ## Disclaimer
 
-The script will give you an indication for standard simlation. The answer should be valid for a large number of simulations.
+The script will give you an indication for standard simluation. The answer should be valid for a large number of simulations.
 If you need more explainations, you can write me: carlo.a.pasquinucci-at-gmail.com
 
 
