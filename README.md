@@ -13,7 +13,15 @@ The simple python script will help you in the choose the correct simulation type
  
     ![2020-09-22_10h12_47](https://user-images.githubusercontent.com/54579322/93858880-23ed6380-fcbd-11ea-97c4-d673381d272f.png)
     
-    
+# How to use it
+## Linux
+
+The python script can be used directly with "python ChooseSimulation.py"
+
+## Windows
+
+The python script can be used directly with "python ChooseSimulation.py" or one can run directly the .exe file.
+
 ## Disclaimer
 
 The script will give you an indication for standard simluation. The answer should be valid for a large number of simulations.
