@@ -6,9 +6,10 @@ import os
 if marine --> multyphase
 
 if electronics
-	temperature is > then 100°C? --> radiation
+	
 	
 	do you are interested also in solid --> coniugate heat transfer
+	temperature is > then 100°C? --> radiation
 	not interested in solid --> convective heat transfer
 	
 if architecture
@@ -41,16 +42,15 @@ def architecture():
 
 def electronics():
 
-	yesno=pymsgbox.confirm('The temperature is bigger than 100 C degree?', '' , 'YN')
-	if yesno=='Y':
-				pymsgbox.alert('You have to activate the radiation too')
-	else:
-				pymsgbox.alert("You don't have to activate the radiation")
 	yesno=pymsgbox.confirm('Are you interested in simulate also the solid part?', '' , 'YN')
 	if yesno=='Y':
+				yesno=pymsgbox.confirm('Is the temperature bigger than 100°C', '' , 'YN')
+				if yesno=='Y':
 				pymsgbox.alert('You have to use coniugate heat transfer simulation')
-	else:
+			else:
 				pymsgbox.alert("You dont' have to use coniugate heat transfer simulation")
+	else:
+				pymsgbox.alert("You don't have to simulate the conjugate heat transfer")
 				
 """		
 def manufactoring():
