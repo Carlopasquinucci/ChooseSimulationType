@@ -23,6 +23,8 @@ Requirements:
 - pymsgbox
 - os
 
+In order to install the requirements, please, run the installRequirements.sh file as "sh installRequirements.sh"
+
 ## Windows
 
 The python script can be used directly with "python ChooseSimulation.py" or one can run directly the .exe file.
