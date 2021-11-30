@@ -3,9 +3,9 @@
  # install requirements
  
  sudo apt-get install pip
- pip install tk
+ sudo apt-get install python3-tk
  pip install os-sys
- pip install pymsgbox
+ sudo pip install PyMsgBox
 
 
 echo 'installation requirements ends'
