@@ -29,8 +29,18 @@ def automotive():
 	yesno=pymsgbox.confirm('The speed is bigger than 100 m/s or 370 km/h?' , '' , 'YN')
 	if yesno=='Y':
 				pymsgbox.alert('You have to setup a compressible simulation')
+				yesno=pymsgbox.confirm('Are you interested also in the variation of the quantities with the time?' , '' , 'YN')
+				if yesno=='Y':
+					pymsgbox.alert('You have to use the rhoPimpleFoam solver')
+				else:
+					pymsgbox.alert('You have to use the rhoSimpleFoam solver')	
 	else:
-				pymsgbox.alert('You have to setup a incompressible simulation')			
+				pymsgbox.alert('You have to setup a incompressible simulation')
+				yesno=pymsgbox.confirm('Are you interested also in the variation of the quantities with the time?' , '' , 'YN')
+				if yesno=='Y':
+					pymsgbox.alert('You have to use the pimpleFoam solver')
+				else:
+					pymsgbox.alert('You have to use the simpleFoam solver')
 
 
 def architecture():
