@@ -18,6 +18,11 @@ The simple python script will help you in the choose the correct simulation type
 
 The python script can be used directly with "python ChooseSimulation.py"
 
+Requirements:
+- tkinter
+- pymsgbox
+- os
+
 ## Windows
 
 The python script can be used directly with "python ChooseSimulation.py" or one can run directly the .exe file.
