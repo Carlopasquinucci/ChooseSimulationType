@@ -73,8 +73,27 @@ def marine():
 	else:
 				pymsgbox.alert('You have to use the monophase simulation')
 				pymsgbox.alert('Choose the automotive button')
+				
+def turbo():
+
+	yesno=pymsgbox.confirm('Are you interested in simulate all the geometry (stator, rotor, volute, etc..) ?', '' , 'YN')
+	if yesno=='Y':
+				solver=pymsgbox.confirm('Are you interested also in the variation of the quantities with the time?' , '' , 'YN')
+				if solver=='Y':
+					pymsgbox.alert('You have to use the pimpleFoam solver')
+				else:
+					pymsgbox.alert('You have to use the simpleFoam solver')
+	else:
+				solver=pymsgbox.confirm('You can simulate a single frame using the SFR method. Are you interested also in the variation of the quantities with the time?' , '' , 'YN')
+				if solver=='Y':
+					pymsgbox.alert('You can simulate the single blase using the SFRPimpleFoam solver')
+				else:
+					pymsgbox.alert('You have to use the SFRSimpleFoam solver')
 
 
+
+def cred():
+    pymsgbox.alert(' Script created by Carlo Augusto Pasquinucci. \n Mail: carlo.a.pasquinucci(at)gmail.com . \n Github page of this project: https://github.com/Carlopasquinucci/ChooseSimulationType ')
 def help():
     pymsgbox.alert(' Choose the field of the simulation you want ro run')
 
@@ -124,6 +143,18 @@ mar = tk.Button(frame,
                    text='Marine',
 				   fg='blue',
                    command=marine)
+mar.pack(side=tk.LEFT)
+
+mar = tk.Button(frame,
+                   text='Turbomachinery',
+				   fg='blue',
+                   command=turbo)
+mar.pack(side=tk.LEFT)
+
+mar = tk.Button(frame,
+                   text='Credits',
+				   fg='orange',
+                   command=cred)
 mar.pack(side=tk.LEFT)
 
 root.mainloop()
